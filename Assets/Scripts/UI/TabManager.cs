@@ -5,30 +5,30 @@ using UnityEngine;
 public class TabManager : MonoSingleton<TabManager>
 {
     [Serializable]
-    public struct TabMapping
+    public struct Tab
     {
         public TabType tabType;
         public GameObject gameObject;
-        public TextMeshProUGUI tabText;
+        public TextMeshProUGUI titleText;
     }
 
-    [SerializeField] TabMapping[] tabMappings;
+    [SerializeField] Tab[] tabs;
 
     public void SetTab(int tab) => SetTab((TabType)tab);
     public void SetTab(TabType tabType)
     {
-        foreach (TabMapping mapping in tabMappings)
+        foreach (Tab tab in tabs)
         {
-            bool active = mapping.tabType == tabType;
+            bool active = tab.tabType == tabType;
             if (active)
             {
-                EnableUnderLine(mapping.tabText);
+                EnableUnderLine(tab.titleText);
             }
             else
             {
-                DisableUnderLine(mapping.tabText);
+                DisableUnderLine(tab.titleText);
             }
-            mapping.gameObject.SetActive(active);
+            tab.gameObject.SetActive(active);
         }
 
         return;

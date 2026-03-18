@@ -2602,16 +2602,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99bc1e32b1463c9489699236aeb37d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabManager
-  tabMappings:
+  tabs:
   - tabType: 0
     gameObject: {fileID: 2099030511}
-    tabText: {fileID: 1526189533}
+    titleText: {fileID: 1526189533}
   - tabType: 1
     gameObject: {fileID: 1326825218}
-    tabText: {fileID: 255784653}
+    titleText: {fileID: 255784653}
   - tabType: 2
     gameObject: {fileID: 2039262696}
-    tabText: {fileID: 665377764}
+    titleText: {fileID: 665377764}
 --- !u!1 &2039262696
 GameObject:
   m_ObjectHideFlags: 0
