@@ -6,11 +6,11 @@ public static class SaveSystem
 {
     public static SaveData CurSaveData { get; set; }
 
-    const string FOLDER_NAME = "Save";
-    const string FILE_NAME = "SaveData.abr";
+    const string FolderName = "Save";
+    const string FileName = "SaveData.abr";
 
-    static string SavePath => Path.Combine(Application.dataPath, FOLDER_NAME);
-    static string FilePath => Path.Combine(SavePath, FILE_NAME);
+    static string SavePath => Path.Combine(Application.dataPath, FolderName);
+    static string FilePath => Path.Combine(SavePath, FileName);
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Init()
