@@ -1,5 +1,4 @@
 using UnityEngine;
-
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -45,7 +44,7 @@ public static class MyLogger
 
     static bool CheckLogLevel(LogType level)
     {
-        Menu.SetChecked(MenuPath + level.ToString(), logLevel == level);
+        Menu.SetChecked(MenuPath + level, logLevel == level);
         return true;
     }
 #endif
