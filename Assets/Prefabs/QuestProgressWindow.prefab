@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 2373032974854006887}
   - component: {fileID: 9141952638866574142}
   - component: {fileID: 6959122808584753932}
+  - component: {fileID: 5241372431956894644}
   m_Layer: 5
   m_Name: QuestProgressWindow
   m_TagString: Untagged
@@ -281,6 +282,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestProgressWindow
   questImage: {fileID: 1710541006532844814}
   progressBar: {fileID: 5312373336545093863}
+--- !u!114 &5241372431956894644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312771222931805950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03bfa64f40a769a4ab7c206eb87eb4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EscapableWindow
 --- !u!1 &8974234877159070196
 GameObject:
   m_ObjectHideFlags: 0

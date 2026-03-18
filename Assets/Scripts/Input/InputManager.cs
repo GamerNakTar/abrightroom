@@ -7,7 +7,7 @@ public class InputManager : MonoSingleton<InputManager>
     [SerializeField] InputActionAsset inputActionAsset;
 
     KeyActionDictionary dictionary;
-    bool inputEnabled;
+    bool inputEnabled = true;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void InitStatic()

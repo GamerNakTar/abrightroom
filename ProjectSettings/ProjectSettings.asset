@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: ChordArc
   productName: A Bright Room
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -681,7 +681,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: e6f67137-d3dd-4d8c-9be4-b666e7ba2221
   framebufferDepthMemorylessMode: 0

@@ -7,6 +7,12 @@ public class QuestProgressBar : MonoBehaviour
     [SerializeField] RectTransform backgroundRect;
 
     Coroutine progressRoutine;
+    EscapableWindow escapableWindow;
+
+    void Awake()
+    {
+        escapableWindow = GetComponentInParent<EscapableWindow>();
+    }
 
     public void StartAnimation(QuestInfo info)
     {
@@ -16,6 +22,7 @@ public class QuestProgressBar : MonoBehaviour
 
     IEnumerator Progress(QuestInfo info)
     {
+        escapableWindow.Busy = true;
         float duration = info.duration;
         float progress = 0;
         while (progress < duration)
@@ -27,5 +34,6 @@ public class QuestProgressBar : MonoBehaviour
         progressRoutine = null;
         EventManager<QuestInfo>.TriggerEvent(Event.QuestComplete, info);
         EventManager.TriggerEvent(Event.QuestComplete);
+        escapableWindow.Busy = false;
     }
 }

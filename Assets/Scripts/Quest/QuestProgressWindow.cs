@@ -11,9 +11,4 @@ public class QuestProgressWindow : MonoSingleton<QuestProgressWindow>
         gameObject.SetActive(true);
         progressBar.StartAnimation(info);
     }
-
-    public void Hide()
-    {
-        gameObject.SetActive(false);
-    }
 }
