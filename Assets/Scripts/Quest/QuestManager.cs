@@ -8,7 +8,6 @@ public class QuestManager : MonoSingleton<QuestManager>
 
     void OnQuestStart(QuestInfo info)
     {
-        QuestProgressWindow.Instance.Show(info);
     }
 
     void OnQuestComplete(QuestInfo info)
