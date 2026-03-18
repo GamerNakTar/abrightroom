@@ -8,4 +8,6 @@ public class QuestInfo : ScriptableObject
     public float duration;
     public int exp;
     public int guildExp;
+
+    public Sprite sprite;
 }

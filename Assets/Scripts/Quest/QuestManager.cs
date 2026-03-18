@@ -15,5 +15,6 @@ public class QuestManager : MonoSingleton<QuestManager>
     {
         EventManager<int>.TriggerEvent(Event.GainExp, info.exp);
         EventManager<int>.TriggerEvent(Event.GainGuildExp, info.guildExp);
+        QuestProgressWindow.Instance.Hide();
     }
 }

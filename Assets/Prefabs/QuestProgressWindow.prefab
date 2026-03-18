@@ -33,10 +33,10 @@ RectTransform:
   - {fileID: 3316436010679900277}
   m_Father: {fileID: 2373032974854006887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 440, y: -495}
+  m_SizeDelta: {x: 880, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5312373336545093863
 MonoBehaviour:
@@ -219,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2373032974854006887
 RectTransform:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -400, y: -200}
+  m_SizeDelta: {x: -399.99997, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9141952638866574142
 MonoBehaviour:
@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad07f7417fb96574c9fe124ed398918f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestProgressWindow
+  questImage: {fileID: 1710541006532844814}
   progressBar: {fileID: 5312373336545093863}
 --- !u!1 &8974234877159070196
 GameObject:
@@ -291,8 +292,9 @@ GameObject:
   - component: {fileID: 3765763706728111150}
   - component: {fileID: 337674028351611557}
   - component: {fileID: 8995778113706997776}
+  - component: {fileID: 1710541006532844814}
   m_Layer: 5
-  m_Name: Image
+  m_Name: QuestImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,10 +314,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2373032974854006887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 470}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 440, y: -235}
+  m_SizeDelta: {x: 880, y: 470}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &337674028351611557
 CanvasRenderer:
@@ -355,3 +357,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1710541006532844814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974234877159070196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5544b7a97cdc5194b98addb1a973bad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestImage
+  image: {fileID: 8995778113706997776}

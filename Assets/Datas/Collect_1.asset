@@ -17,3 +17,4 @@ MonoBehaviour:
   duration: 10
   exp: 1
   guildExp: 1
+  sprite: {fileID: -4882111509447600386, guid: b649e2bd72519d84395ac096696ef1c3, type: 3}
