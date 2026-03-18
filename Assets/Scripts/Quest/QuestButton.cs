@@ -10,7 +10,6 @@ public class QuestButton : MonoBehaviour
 
     public void OnPress()
     {
-        print("button pressed");
         EventManager<QuestInfo>.TriggerEvent(Event.QuestStart, questInfo);
         EventManager.TriggerEvent(Event.QuestStart);
     }
