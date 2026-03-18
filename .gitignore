@@ -108,3 +108,7 @@ InitTestScene*.unity*
 # Rider-specific build artifacts
 [Bb]in/
 [Oo]bj/
+
+# Save Files
+Save/
+Save.meta
