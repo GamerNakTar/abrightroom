@@ -9,4 +9,8 @@ public enum Event
     // Quest
     QuestStart,
     QuestComplete,
+
+    // Input
+    EnableInput,
+    DisableInput
 }
